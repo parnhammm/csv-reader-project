@@ -1,6 +1,11 @@
 # csv-reader-project
 
-A simple CSV reader to report and analyse an input CSV
+A simple CSV reader to report and analyse an input CSV.
+
+This project contains two seperate approaches to demonstrate how we can read a CSV using TypeScript and node.
+
+- Composition approach: Utilising an interface based approach
+- Inheritence approach: Utilising abstract classes and generics
 
 ## Dependencies
 
@@ -12,5 +17,10 @@ file change and concurrently allows both the `start:run` and `start:build` scrip
 
 ## Installation
 
-- In root directory, run `npm install`
-- In root directory, run `npm start` (This will start a running process in the current terminal window)
+Note to start this project, package.json script `start:run` needs to be set to the `index.ts` file of the approach you wish to take...
+
+- build/InheritenceApproach/index.js
+- build/CompositionApproach/index.js
+
+* In root directory, run `npm install`
+* In root directory, run `npm start` (This will start a running process in the current terminal window)
