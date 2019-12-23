@@ -1,6 +1,6 @@
-import { MatchResult } from "../Enums/MatchResult";
-import { CsvFileMatchReader } from "./Readers/CsvFileMatchReader";
-import { MatchReader } from "./MatchReader";
+import { MatchResult } from "./Enums/MatchResult";
+import { CsvFileMatchReader } from "./CompositionApproach/Readers/CsvFileMatchReader";
+import { MatchReader } from "./CompositionApproach/MatchReader";
 
 const matchReader = new MatchReader(new CsvFileMatchReader("football.csv"));
 matchReader.load();

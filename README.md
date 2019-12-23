@@ -17,10 +17,5 @@ file change and concurrently allows both the `start:run` and `start:build` scrip
 
 ## Installation
 
-Note to start this project, package.json script `start:run` needs to be set to the `index.ts` file of the approach you wish to take...
-
-- build/InheritenceApproach/index.js
-- build/CompositionApproach/index.js
-
-* In root directory, run `npm install`
-* In root directory, run `npm start` (This will start a running process in the current terminal window)
+- In root directory, run `npm install`
+- In root directory, run `npm start` (This will start a running process in the current terminal window)
