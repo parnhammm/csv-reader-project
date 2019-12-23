@@ -1,5 +1,5 @@
 import { CsvFileReader } from "./FileReader/CsvFileReader";
-import { dateStringToDate } from "./Utils/utils";
+import { dateStringToDate } from "../Utils/utils";
 import { MatchResult } from "./MatchResult";
 
 //Define a tuple for the result of the csv reading...
