@@ -1,27 +1,22 @@
-import fs from "fs";
 import { dateStringToDate } from "../Utils/utils";
 import { MatchResult } from "../Enums/MatchResult";
 
 //Define a tuple for the result of the csv reading...
 type MatchData = [Date, string, string, number, number, MatchResult, string];
 
-export class CsvFileReader {
-  protected newLineChar = "\n";
+export interface DataReader {
+  read(): void;
+  data: string[][];
+}
 
-  data: MatchData[] = [];
+export class MatchReader {
+  matches: MatchData[] = [];
 
-  constructor(public filename: string, protected encoding: string = "utf-8") {}
+  constructor(public reader: DataReader) {}
 
-  read(): void {
-    this.data = fs
-      .readFileSync(this.filename, {
-        encoding: this.encoding
-      })
-      .split(this.newLineChar)
-      .map((row: string): string[] => {
-        return row.split(",");
-      })
-      .map(this.mapRow);
+  load(): void {
+    this.reader.read();
+    this.matches = this.reader.data.map(this.mapRow);
   }
 
   mapRow(row: string[]): MatchData {
