@@ -1,8 +1,6 @@
-import { dateStringToDate } from "../Utils/utils";
-import { MatchResult } from "../Enums/MatchResult";
-
-//Define a tuple for the result of the csv reading...
-type MatchData = [Date, string, string, number, number, MatchResult, string];
+import { dateStringToDate } from "../../Utils/utils";
+import { MatchResult } from "../../Enums/MatchResult";
+import { MatchData } from "../MatchData";
 
 export interface DataReader {
   read(): void;
