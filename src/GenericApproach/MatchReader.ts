@@ -1,6 +1,6 @@
 import { CsvFileReader } from "./FileReader/CsvFileReader";
 import { dateStringToDate } from "../Utils/utils";
-import { MatchResult } from "./MatchResult";
+import { MatchResult } from "../Enums/MatchResult";
 
 //Define a tuple for the result of the csv reading...
 type MatchData = [Date, string, string, number, number, MatchResult, string];

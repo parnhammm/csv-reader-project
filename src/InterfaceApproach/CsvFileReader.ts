@@ -1,6 +1,6 @@
 import fs from "fs";
-import { dateStringToDate } from "./utils";
-import { MatchResult } from "./MatchResult";
+import { dateStringToDate } from "../Utils/utils";
+import { MatchResult } from "../Enums/MatchResult";
 
 //Define a tuple for the result of the csv reading...
 type MatchData = [Date, string, string, number, number, MatchResult, string];
