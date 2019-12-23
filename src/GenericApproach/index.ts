@@ -1,4 +1,4 @@
-import { MatchResult } from "./MatchResult";
+import { MatchResult } from "../Enums/MatchResult";
 import { MatchReader } from "./MatchReader";
 
 const reader = new MatchReader("football.csv");

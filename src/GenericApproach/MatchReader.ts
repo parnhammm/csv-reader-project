@@ -1,4 +1,4 @@
-import { CsvFileReader } from "./FileReader/CsvFileReader";
+import { CsvFileReader } from "./Readers/CsvFileReader";
 import { dateStringToDate } from "../Utils/utils";
 import { MatchResult } from "../Enums/MatchResult";
 
